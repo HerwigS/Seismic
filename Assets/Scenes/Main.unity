@@ -136,12 +136,12 @@ GameObject:
   - component: {fileID: 108690381}
   - component: {fileID: 108690384}
   m_Layer: 0
-  m_Name: Visual Effect
+  m_Name: VFXRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!73398921 &108690381
 VFXRenderer:
   serializedVersion: 1
@@ -150,7 +150,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108690380}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -190,7 +190,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108690380}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 79981834fbd8f144e9c5598d8dfa99bc, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 320b71dd0d8357044abe85ec36f1aae7, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -198,7 +198,34 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Lerp Position 01
+        m_Overridden: 1
+      - m_Value: 0.4
+        m_Name: Arm Width
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Arm Reaction Scale
+        m_Overridden: 1
+      - m_Value: 1.75
+        m_Name: Height Adjust
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: Height Reaction Scale
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lerp Scale Manual
+        m_Overridden: 1
+      - m_Value: 0.2
+        m_Name: Scale Manual
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lerp Intensity Manual
+        m_Overridden: 1
+      - m_Value: 0.2
+        m_Name: Intensity Manual
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -208,7 +235,10 @@ VisualEffect:
     m_Uint:
       m_Array: []
     m_Int:
-      m_Array: []
+      m_Array:
+      - m_Value: 1000000
+        m_Name: Spawn Rate
+        m_Overridden: 1
     m_Matrix4x4f:
       m_Array: []
     m_AnimationCurve:
@@ -227,12 +257,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108690380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.31, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &108690384
 MonoBehaviour:
@@ -300,7 +330,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492457762
 GameObject:
@@ -406,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632906617}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -5.05, y: -1.47, z: 36.91}
+  m_LocalPosition: {x: 2.4, y: 0, z: 29.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1020,7 +1050,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 16.93, y: 173.441, z: 0}
 --- !u!1 &1313436611
 GameObject:
@@ -1054,6 +1084,322 @@ Transform:
   - {fileID: 844003601}
   m_Father: {fileID: 741147618}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484686869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484686873}
+  - component: {fileID: 1484686872}
+  - component: {fileID: 1484686871}
+  - component: {fileID: 1484686870}
+  m_Layer: 0
+  m_Name: VFXLandscape
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1484686870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484686869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db45cde872ea1874b97fa657772b37f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionX: GetPositionX
+  PositionY: GetPositionY
+  PositionZ: GetPositionZ
+  DistanceRightLeftHandX: GetDistanceRightLeftHandX
+  DistanceRightLeftHandY: GetDistanceRightLeftHandY
+  DistanceToeAndHeadBonesX: GetDistanceToeAndBonesX
+  DistanceToeAndHeadBonesY: GetDistanceToeAndBonesY
+  Avatar: {fileID: 919132148010476783}
+--- !u!73398921 &1484686871
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484686869}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!2083052967 &1484686872
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484686869}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: 118f726f5eeac5345ac33dd1170fa940, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0
+        m_Name: Lerp Position 01
+        m_Overridden: 1
+      - m_Value: 0.4
+        m_Name: Arm Width
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Arm Reaction Scale
+        m_Overridden: 1
+      - m_Value: 1.75
+        m_Name: Height Adjust
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: Height Reaction Scale
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lerp Scale Manual
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lerp Intensity Manual
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array:
+      - m_Value: 4000000
+        m_Name: Spawn Rate
+        m_Overridden: 1
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array: []
+    m_Bool:
+      m_Array: []
+--- !u!4 &1484686873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484686869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1629042359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629042363}
+  - component: {fileID: 1629042362}
+  - component: {fileID: 1629042361}
+  - component: {fileID: 1629042360}
+  m_Layer: 0
+  m_Name: VFXLandscapeFlat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1629042360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629042359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db45cde872ea1874b97fa657772b37f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionX: GetPositionX
+  PositionY: GetPositionY
+  PositionZ: GetPositionZ
+  DistanceRightLeftHandX: GetDistanceRightLeftHandX
+  DistanceRightLeftHandY: GetDistanceRightLeftHandY
+  DistanceToeAndHeadBonesX: GetDistanceToeAndBonesX
+  DistanceToeAndHeadBonesY: GetDistanceToeAndBonesY
+  Avatar: {fileID: 919132148010476783}
+--- !u!73398921 &1629042361
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629042359}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!2083052967 &1629042362
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629042359}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: 4ef8906106e470d4e873d924dfd0ca2b, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0
+        m_Name: Lerp Position 01
+        m_Overridden: 1
+      - m_Value: 0.4
+        m_Name: Arm Width
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Arm Reaction Scale
+        m_Overridden: 1
+      - m_Value: 1.75
+        m_Name: Height Adjust
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: Height Reaction Scale
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lerp Scale Manual
+        m_Overridden: 1
+      - m_Value: 0.1
+        m_Name: Scale Manual
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lerp Intensity Manual
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Intensity Manual
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array:
+      - m_Value: 4000000
+        m_Name: Spawn Rate
+        m_Overridden: 1
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array: []
+    m_Bool:
+      m_Array: []
+--- !u!4 &1629042363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629042359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1911464181
 GameObject:
@@ -1980,7 +2326,7 @@ Transform:
   m_Children:
   - {fileID: 5041953746438861164}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5041953747780352205
 GameObject:
@@ -2035,7 +2381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5530317997912981009, guid: 858b8cf0f254cf04686a906a289ed12f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5530317997912981009, guid: 858b8cf0f254cf04686a906a289ed12f, type: 3}
       propertyPath: m_LocalPosition.x

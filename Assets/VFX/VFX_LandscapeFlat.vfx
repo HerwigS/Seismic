@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: VFX_Landscape
+  m_Name: VFX_LandscapeFlat
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -339,7 +339,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VFX_Landscape
+  m_Name: VFX_LandscapeFlat
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -969,7 +969,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614601}
   - {fileID: 8926484042661614602}
   - {fileID: 8926484042661614603}
-  Asset: {fileID: -3256353808211938606, guid: c4df687d73736604ca5c88fc46dfd181, type: 3}
+  Asset: {fileID: -3256353808211938606, guid: 9af25f39dd1d4bd4db8de747022a2308, type: 3}
 --- !u!114 &8926484042661614601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6615,7 +6615,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615141}
   m_ExposedName: Intensity Manual
   m_Exposed: 1
-  m_Order: 17
+  m_Order: 16
   m_Category: 
   m_Min:
     m_Type:
@@ -6695,7 +6695,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615143}
   m_ExposedName: Lerp Intensity Manual
   m_Exposed: 1
-  m_Order: 16
+  m_Order: 15
   m_Category: 
   m_Min:
     m_Type:
