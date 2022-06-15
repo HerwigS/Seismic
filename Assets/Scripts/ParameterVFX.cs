@@ -11,6 +11,8 @@ public class ParameterVFX : MonoBehaviour
     public string DistanceRightLeftHandX, DistanceRightLeftHandY;
 
     public string DistanceToeAndHeadBonesX, DistanceToeAndHeadBonesY;
+    
+    public string DistanceLeftFootAndRightFootX, DistanceLeftFootAndRightFootY;
 
     VisualEffect visualEffect;
     private DistanceBones DistanceBonesScript;
@@ -44,5 +46,7 @@ public class ParameterVFX : MonoBehaviour
         visualEffect.SetFloat(DistanceRightLeftHandY, (DistanceBonesScript._distanceBetweenLeftRightBonesY));
         visualEffect.SetFloat(DistanceToeAndHeadBonesX, (DistanceBonesScript._distanceBetweenToeAndHeadBonesX));
         visualEffect.SetFloat(DistanceToeAndHeadBonesY, (DistanceBonesScript._distanceBetweenToeAndHeadBonesY));
+        visualEffect.SetFloat(DistanceLeftFootAndRightFootX, (DistanceBonesScript._distanceBetweenLeftFootAndRightFootX));
+        visualEffect.SetFloat(DistanceLeftFootAndRightFootY, (DistanceBonesScript._distanceBetweenLeftFootAndRightFootY));
     }
 }

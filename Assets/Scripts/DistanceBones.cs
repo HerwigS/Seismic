@@ -12,7 +12,10 @@ public class DistanceBones : MonoBehaviour
     private Transform RightHandTransform;
     private Transform LeftHandTransform;
     private Transform HeadTransform;
-    private Transform RightToeTransform;
+    
+    
+    private Transform RightFootTransform;
+    private Transform LeftFootTransform;
 
     public Vector3 _GlobalPosition;
 
@@ -27,6 +30,10 @@ public class DistanceBones : MonoBehaviour
     // Values Toe And Head
     public float _distanceBetweenToeAndHeadBonesX;
     public float _distanceBetweenToeAndHeadBonesY;
+    
+    // Values Toe to Toe
+    public float _distanceBetweenLeftFootAndRightFootX;
+    public float _distanceBetweenLeftFootAndRightFootY;
 
     // Start is called before the first frame update
     void Start()
@@ -41,9 +48,12 @@ public class DistanceBones : MonoBehaviour
         CheckBones();
         _distanceBetweenLeftRightBonesX = CheckDistanceBonesX(RightHandTransform, LeftHandTransform);
         _distanceBetweenLeftRightBonesY = CheckDistanceBonesY(RightHandTransform, LeftHandTransform);
-        _distanceBetweenToeAndHeadBonesX = CheckDistanceBonesX(HeadTransform, RightToeTransform);
-        _distanceBetweenToeAndHeadBonesY = CheckDistanceBonesY(HeadTransform, RightToeTransform);
-
+        _distanceBetweenToeAndHeadBonesX = CheckDistanceBonesX(HeadTransform, RightFootTransform);
+        _distanceBetweenToeAndHeadBonesY = CheckDistanceBonesY(HeadTransform, RightFootTransform);
+        _distanceBetweenLeftFootAndRightFootX = CheckDistanceBonesX(LeftFootTransform, RightFootTransform);
+        _distanceBetweenLeftFootAndRightFootY = CheckDistanceBonesY(LeftFootTransform, RightFootTransform);
+        
+        
         //CheckDistanceBones(_distanceBetweenToeAndHeadBonesX, _distanceBetweenToeAndHeadBonesY, HeadTransform,
         //  RightToeTransform);
 
@@ -79,6 +89,8 @@ public class DistanceBones : MonoBehaviour
         RightHandTransform = anim.GetBoneTransform(HumanBodyBones.RightHand);
         LeftHandTransform = anim.GetBoneTransform(HumanBodyBones.LeftHand);
         HeadTransform = anim.GetBoneTransform(HumanBodyBones.Head);
-        RightToeTransform = anim.GetBoneTransform(HumanBodyBones.RightToes);
+        RightFootTransform = anim.GetBoneTransform(HumanBodyBones.RightFoot);
+        LeftFootTransform = anim.GetBoneTransform(HumanBodyBones.LeftFoot);
+        
     }
 }
